@@ -7,7 +7,7 @@ from app import api
 async def print_info(
     user_id: str, command_name: str, infos: Optional[AsyncIterator[NamedTuple]]
 ) -> None:
-    print(f"Command {command_name} result for user_id={user_id}:")
+    print(f"\nCommand {command_name} result for user_id={user_id}:\n")
 
     if infos is None:
         print("Incorrect user_id.")
